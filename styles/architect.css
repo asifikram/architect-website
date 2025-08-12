@@ -1,0 +1,70 @@
+
+.work-sans-normal {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+
+/* shared style */
+
+.btn-primary{
+    background-color:#FF900E ;
+    color:white ;
+    font-size:1.25rem ;
+    font-weight:500 ;
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+.header-bg{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* navbar design */
+
+.display{
+    display: flex;
+}
+
+
+.brand{
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-title{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.item{
+    margin-right: 30px;
+    list-style: none;
+}
+
+.brand, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+/* small device media query */
+@media screen and (max-width:576px) {
+    .brand, .navbar{
+        flex-direction: column;
+    }
+}
