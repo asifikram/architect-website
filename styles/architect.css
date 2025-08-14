@@ -103,6 +103,24 @@ main{
     max-width: 530px;
 }
 
+/* our  features */
+.enjoy-description{
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 580px;
+}
+
+.enjoy-title{
+    font-weight: 700;
+    font-size: 1.25rem;
+    border-left:5px solid #FF900E ;
+    padding-left:21px ;
+}
+
+.card{
+    max-width:580px ;
+}
+
 /* somr fact section */
     .fact-icon{
         display: grid;
@@ -136,12 +154,26 @@ main{
     max-width: 540px;
    }
 
-   .sponspor-container{
-    max-width: 540px;
-    margin: 0 auto;
-    text-align: center;
+  .sponspor-container{
+    display: flex;
+    gap: 140px;
+  }
+
+  .sponspor-title{
+    font-weight: 700;
+    font-size: 2.25rem;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+  }
   
-   }
+  .sponspor-description{
+    max-width: 580px;
+  }
+
+  .sponspor-content{
+    margin-bottom: 38px;
+  }
+   
 
    .sponspor-company{
     display: grid;
@@ -152,10 +184,39 @@ main{
     filter: grayscale(100%);
    }
 
+   .sponspor{
+    max-width: 580px;
+    box-shadow:0px 4px 30px 0px rgba(0, 0, 0, 0.06)  ;
+    gap:20px ;
+    padding: 20px 20px;
+    border-radius: 8px;
+   }
+
+   
+   .architect img{
+    max-width: 800px;
+   }
+
+   #exprience-badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+   }
+
+   #experience-year{
+    font-weight: 700;
+    font-size:4rem ;
+   }
+
+   .architect img{
+    width: 100%;
+   }
+
+
 
 /* small device media query */
 @media screen and (max-width:576px) {
-    .brand, .navbar, .team{
+    .brand, .navbar, .team, .sponspor-container{
         flex-direction: column;
     }
  
@@ -167,6 +228,11 @@ main{
         gap: 24px;
     }
 
+    #exprience-badge{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
     .sponspor-company{
         gap: 50px;
         justify-items: center;
@@ -176,7 +242,7 @@ main{
 
 /* medium device size */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .team{
+    .team,.sponspor-container{
         flex-direction: column;
     }
    .fact-icon{
@@ -184,9 +250,16 @@ main{
     gap: 24px;
    }
 
+ 
+
    .sponspor-company{
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+   }
+
+   #exprience-badge{
+    margin-left: 20px;
+    margin-top: 20px;
    }
 
 
